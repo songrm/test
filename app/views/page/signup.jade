@@ -1,0 +1,22 @@
+extends ../layout
+block content
+	.container
+		div
+			div.modal-header
+				button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true")
+				h4#myModalLabel.myModalLabel 注册
+			form(method='post',action='/signup')
+				div.modal-body
+					.form-group
+						label(for="exampleInputEmail1") 用户名
+						input(type="text" class="form-control" name="user[name]" id="exampleInputEmail1" placeholder="id")
+					.form-group
+						label(for="exampleInputEmail1") 密码
+						input(type="text" class="form-control" name="user[password]" id="exampleInputEmail1")
+					.form-group
+						label(for="exampleInputEmail1") role
+						input(type="text" class="form-control" name="user[role]" id="")
+				div.modal-footer
+					button(type="button" class="btn btn-default" data-dismiss="modal") close
+					button(type="submit" class="btn btn-primary") 注册

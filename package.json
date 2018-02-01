@@ -1,0 +1,32 @@
+{
+  "name": "my_test",
+  "version": "0.0.1",
+  "description": "my_test",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "connect-mongo": "^2.0.1",
+    "connect-multiparty": "^2.1.0",
+    "cookie-session": "^2.0.0-beta.3",
+    "cookie-parser": "^1.4.3",
+    "express-session": "^1.15.6",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "jquery": "^3.2.1",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.9",
+    "multipart": "^0.1.5",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "my_test"
+  ],
+  "author": "醉清风",
+  "license": "ISC"
+}

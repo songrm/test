@@ -1,0 +1,7 @@
+extends ../layout
+block content
+	.container-fluid
+		a.btn.btn-default(href='/') 我的主页
+		.lead #{movie._txt}
+		.lead #{movie._det}
+		img(src='/img/#{movie.poster}')

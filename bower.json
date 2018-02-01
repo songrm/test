@@ -1,0 +1,21 @@
+{
+  "name": "my_test",
+  "authors": [
+    "‘ruimim’ <‘1375394061@qq.com’>"
+  ],
+  "description": "my_test",
+  "main": "",
+  "keywords": [
+    "my_test"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,19 @@
+extends ../layout
+block content
+	.container-fluid
+		a.btn.btn-default(href='/up') add
+		.row
+			.col-xs-12 
+					.col-md-4 id
+					.col-md-5 _txt文字
+					.col-md-3 编辑
+
+			each item in movies
+				div(class='col-xs-12 item-id-#{item._id}')
+					.col-md-4 #{item._id}
+					.col-md-5 #{item._txt} #{item._det} #{item._img}
+					.col-md-3
+						a.btn.btn-default(href='/det/#{item._id}') 查看
+						a.btn.btn-default(href='/mod/#{item._id}') 修改
+						button.btn.btn-danger(data-id='#{item._id}') 删除
+	script(src='/admin.det.js')

@@ -1,0 +1,20 @@
+extends ../layout
+block content
+	.container-fluid
+		a.btn.btn-default(href='/') 返回
+		label #{movie}
+		form(method='post',action='/news')
+			.form-group
+				label id
+					input.form-control(type="text",name='movie[_id]',value='#{movie._id}')
+			.form-group
+				label txt
+					input.form-control(type="text",name='movie[_txt]',value='#{movie._txt}')
+			.form-group
+				label det
+					input.form-control(type="text",name='movie[_det]',value='#{movie._det}')
+			.form-group
+				label det
+					input.form-control(type="file",name='upload_img',id='upload_img')
+			.form-group
+				input.btn.btn-default(type="submit",value='提交')
